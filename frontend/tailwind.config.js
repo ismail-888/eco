@@ -10,6 +10,13 @@ module.exports = {
         txtGray:"#4c4c4c",
       }
     },
+    screens: {
+      xl: { max: "1400px" },
+      lg: { max: "1150px" },
+      md: { max: "767px" },
+      sm: { max: "639px" },
+      xs: { max: "393px" },
+    },
   },
   plugins: [],
 }

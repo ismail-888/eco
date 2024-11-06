@@ -4,7 +4,7 @@ const Footer = () => {
   // "mx-auto container px-4"
 
   return (
-    <footer className="px-4 pb-4 bg-bgBlue text-white">
+    <footer className="w-full px-4 pb-4 bg-bgBlue text-white bg-cover bg-center" style={{backgroundImage:"url('/assets/f-bg.png')"}} >
       <div>
         <p className="text-2xl py-4 font-bold">Follow Rock Space Lebanon</p>
         <div className="flex justify-start items-center gap-4 mb-4 ">
