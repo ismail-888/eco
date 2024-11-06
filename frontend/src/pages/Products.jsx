@@ -26,6 +26,7 @@ const Products = () => {
     <div className="w-full h-full bg-zinc-100 " >
       <ImageWithText text={"Products"} />
        <div className="px-5 py-2">
+        
       <div className="flex justify-between items-center p-4 font-bold text-txtGray text-lg">
         <button
           className={activeComponent === "FrontFilmsCard" ? "border-b-2 border-cyan-600 text-bgBlue" : ""}
