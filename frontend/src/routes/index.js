@@ -3,6 +3,7 @@ import App from '../App'
 import Home from '../pages/Home'
 import Products from '../pages/Products'
 import Referral from '../pages/Referral'
+import Bundles from '../pages/Bundles'
 
 
 const router=createBrowserRouter([
@@ -21,6 +22,10 @@ const router=createBrowserRouter([
             {
                 path:"/referral",
                 element:<Referral/>
+            },
+            {
+                path:"/bundles",
+                element:<Bundles/>
             },
         ]
     }
