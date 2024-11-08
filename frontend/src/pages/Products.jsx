@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
-import ImageWithText from "../helper/ImageWithText";
+import ImageWithText from "../components/ImageWithText";
 import FrontFilmsCard from "../components/FrontFilmsCard";
 import BackSkins from "../components/BackSkins";
 import Machines from "../components/Machines";
@@ -23,7 +23,7 @@ const Products = () => {
   };
 
   return (
-    <div className="w-full h-full bg-zinc-100 " >
+    <div className="w-full min-h-screen bg-zinc-100 " >
       <ImageWithText text={"Products"} />
        <div className="px-5 py-2">
         

@@ -1,5 +1,5 @@
 import React from "react";
-import ImageWithText from "../helper/ImageWithText";
+import ImageWithText from "../components/ImageWithText";
 
 const Referral = () => {
   return (
