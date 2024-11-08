@@ -32,6 +32,18 @@ const router=createBrowserRouter([
                 path:"/whyus",
                 element:<WhyUs/>
             },
+            {
+                path:"/aboutus",
+                element:<WhyUs/>
+            },
+            {
+                path:"/warranty",
+                element:<Referral/>
+            },
+            {
+                path:"/reviews",
+                element:<WhyUs/>
+            },
         ]
     }
 ])

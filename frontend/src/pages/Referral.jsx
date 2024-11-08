@@ -11,7 +11,7 @@ const Referral = () => {
             <img
               src={"/assets/test1.png"}
               alt="test"
-              className="w-[250px] h-[350px] rounded-2xl "
+              className="w-[250px] h-[350px] rounded-2xl object-cover "
             />
             <button>
               <img

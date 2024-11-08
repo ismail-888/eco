@@ -4,7 +4,13 @@ const BackSkins = ({ image, title, price, pack, size, designs }) => {
   return (
     <div className="px-3 w-full  bg-white border rounded-lg mb-4 ">
       <div className="relative flex w-full justify-between items-center ">
-        <img src={image} alt="frontFilms" className="w-[50px] h-[150px]" />
+      <div className="w-28 h-32">
+          <img
+            src={image}
+            alt="BackSkins"
+            className="w-full h-full object-scale-down mix-blend-multiply"
+          />
+        </div>
         {/* <img
           src={"/assets/new.png"}
           alt="newProduct"

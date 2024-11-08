@@ -4,7 +4,13 @@ const Machines = ({ image, price, title, subtitle }) => {
   return (
     <div className="px-3 w-full  bg-white border rounded-lg mb-4 ">
       <div className="relative flex w-full justify-between items-center ">
-        <img src={image} alt="frontFilms" className="w-[50px] h-[150px] " />
+        <div className="w-28 h-32">
+          <img
+            src={image}
+            alt="BackSkins"
+            className="w-full h-full object-scale-down mix-blend-multiply"
+          />
+        </div>
 
         <div className="flex flex-col justify-start items-start">
           <h1 className="text-[16px] font-bold text-txtGray">{title}</h1>
