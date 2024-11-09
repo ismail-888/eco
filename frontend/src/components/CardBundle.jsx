@@ -2,7 +2,7 @@ import React from "react";
 
 const CardBundle = ({ text, subtext, image, price }) => {
   return (
-    <div className="relative flex flex-col justify-center items-center px-3 pt-4 pb-5 w-full bg-white border rounded-2xl mb-4 my-5 ">
+    <div className="relative flex flex-col justify-center items-center px-3 pt-4 pb-5 md:w-full w-[500px] mx-auto bg-white  rounded-2xl mb-4 my-5 ">
       <h1 className="font-bold text-txtGray text-xl">{text}</h1>
       <p className="font-light text-txtGray ">
         {subtext} <span className="font-bold">(${price})</span>

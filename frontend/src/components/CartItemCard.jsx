@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { MdDelete } from "react-icons/md";
+
+import { FiPlus, FiMinus } from "react-icons/fi";
 const CartItemCard = ({ image, title, price, size, pack }) => {
   const [quantity, setQuantity] = useState(1);
 
@@ -46,32 +48,55 @@ const CartItemCard = ({ image, title, price, size, pack }) => {
           {/* Quantity Selector */}
           <div className="flex items-center gap-3 mt-1">
             <button
-              className="border  hover:bg-zinc-500 hover:text-white  w-8 h-8 flex justify-center items-center rounded "
+              className="border border-zinc-900  hover:bg-zinc-500 hover:text-white  w-7 h-7 flex justify-center items-center rounded "
               onClick={handleDecrement}
             >
-              -
+              <FiMinus />
             </button>
-            <span>{quantity}</span>
+            <span className="text-2xl">{quantity}</span>
             <button
-              className="border   hover:bg-zinc-500 hover:text-white w-8 h-8 flex justify-center items-center rounded "
+              className="border border-zinc-900  hover:bg-zinc-500 hover:text-white w-7 h-7 flex justify-center items-center rounded "
               onClick={handleIncrement}
             >
-              +
+              <FiPlus />
             </button>
             {/* Total Price */}
-            <span className="font-bold text-txtGray">
+            <span className="font-semibold text-txtGray text-lg">
               {/* ${(price * quantity).toFixed(2)} */}${price * quantity}
             </span>
           </div>
         </div>
       </div>
 
-      <div className="border border-b-1 border-black "></div>
+      <div className="border border-b-1 border-black my-5"></div>
       {/* Summary  */}
-      <div>
-        <div>image</div>
-        <div>
-            
+      <div className="flex justify-evenly items-center">
+        <div className="h-full w-40">
+          <img
+            src={"/assets/cart-logo.png"}
+            className="w-full h-[200px]  mix-blend-multiply"
+          />
+        </div>
+        <div className=" text-txtGray ">
+          <div className="flex  justify-between items-center gap-5">
+            <span>Sub-Total</span>
+            <span>$835</span>
+          </div>
+
+          <div className="flex  justify-between items-center gap-5">
+            <span>Delivery</span>
+            <span>$3</span>
+          </div>
+
+          <div className="border border-b-1 border-black my-1"></div>
+
+          <div className="flex  justify-between items-center gap-5 font-bold text-lg ">
+            <span>Total</span>
+            <span>$835</span>
+          </div>
+          <button className="bg-bgBlue font-bold text-white px-5 py-2 w-full rounded-lg text-lg mt-4">
+            Checkout
+          </button>
         </div>
       </div>
     </div>

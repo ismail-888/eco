@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Cart from "../pages/Cart";
+import Menu from "../pages/Menu";
 
 const Header = () => {
   const [activeModal, setActiveModal] = useState(null); // null, "menu", or "cart"
@@ -63,58 +64,10 @@ const Header = () => {
             fade ? "fade-in" : "fade-out"
           }`}
         >
-          {/* Close Button */}
-          {/* <button
-            className="absolute top-4 right-4 text-txtGray text-5xl"
-            onClick={closeModal}
-          >
-            &times;
-          </button> */}
-
           {/* Conditional Rendering Based on Modal Type */}
-          {activeModal === "menu" && (
-            <>
-              <div className="flex">
-                <img
-                  src={"/assets/navLogo.png"}
-                  alt="navLogo"
-                  className="w-[250px] pb-2 -mt-2"
-                />
-                <button
-                  className="absolute top-4 right-4 text-txtGray text-5xl"
-                  onClick={closeModal}
-                >
-                  &times;
-                </button>
-              </div>
-              <ul className="text-left text-txtGray text-xl font-[400] space-y-4 mt-16">
-                <li>
-                  <NavLink onClick={closeModal} to="/products">
-                    Products
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink onClick={closeModal} to="/videos">
-                    Videos
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink onClick={closeModal} to="/bundles">
-                    Bundles
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink onClick={closeModal} to="/referral">
-                    Referral Program
-                  </NavLink>
-                </li>
-              </ul>
-            </>
-          )}
+          {activeModal === "menu" && <Menu closeModal={closeModal} />}
 
-          {activeModal === "cart" && (
-            <Cart closeModal={closeModal}/>
-          )}
+          {activeModal === "cart" && <Cart closeModal={closeModal} />}
         </div>
       )}
     </header>

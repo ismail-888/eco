@@ -3,78 +3,77 @@ import CartItemCard from "../components/CartItemCard";
 // import { MdDelete } from "react-icons/md";
 
 const Cart = ({ closeModal }) => {
-    // const [data, setData] = useState([3]);
+  // const [data, setData] = useState([3]);
 
-    // const increaseQty = async (id, qty) => {
-    //     const response = await fetch(SummaryApi.updateCartProduct.url, {
-    //       method: SummaryApi.updateCartProduct.method,
-    //       credentials: "include",
-    //       headers: {
-    //         "content-type": "application/json",
-    //       },
-    //       body: JSON.stringify({
-    //         _id: id,
-    //         quantity: qty + 1,
-    //       }),
-    //     });
-    //     const responseData = await response.json();
-    
-    //     if (responseData.success) {
-    //       fetchData();
-    //     }
-    //   };
-    
+  // const increaseQty = async (id, qty) => {
+  //     const response = await fetch(SummaryApi.updateCartProduct.url, {
+  //       method: SummaryApi.updateCartProduct.method,
+  //       credentials: "include",
+  //       headers: {
+  //         "content-type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         _id: id,
+  //         quantity: qty + 1,
+  //       }),
+  //     });
+  //     const responseData = await response.json();
 
-    //   const decraseQty = async (id, qty) => {
-    //     if (qty >= 2) {
-    //       const response = await fetch(SummaryApi.updateCartProduct.url, {
-    //         method: SummaryApi.updateCartProduct.method,
-    //         credentials: "include",
-    //         headers: {
-    //           "content-type": "application/json",
-    //         },
-    //         body: JSON.stringify({
-    //           _id: id,
-    //           quantity: qty - 1,
-    //         }),
-    //       });
-    //       const responseData = await response.json();
-    
-    //       if (responseData.success) {
-    //         fetchData();
-    //       }
-    //     }
-    //   };
+  //     if (responseData.success) {
+  //       fetchData();
+  //     }
+  //   };
 
-    // const deleteCartProduct = async (id) => {
-    //     const response = await fetch(SummaryApi.deleteCartProduct.url, {
-    //       method: SummaryApi.deleteCartProduct.method,
-    //       credentials: "include",
-    //       headers: {
-    //         "content-type": "application/json",
-    //       },
-    //       body: JSON.stringify({
-    //         _id: id,
-    //       }),
-    //     });
-    
-    //     const responseData = await response.json();
-    
-    //     if (responseData.success) {
-    //       fetchData();
-    //       context.fetchUserAddToCart();
-    //     }
-    //   };
+  //   const decraseQty = async (id, qty) => {
+  //     if (qty >= 2) {
+  //       const response = await fetch(SummaryApi.updateCartProduct.url, {
+  //         method: SummaryApi.updateCartProduct.method,
+  //         credentials: "include",
+  //         headers: {
+  //           "content-type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           _id: id,
+  //           quantity: qty - 1,
+  //         }),
+  //       });
+  //       const responseData = await response.json();
 
-    // const totalQty = data.reduce(
-    //     (prevValue, currentValue) => prevValue + currentValue.quantity,
-    //     0
-    //   );
-      
-    //   const totalPrice = data.reduce(
-    //     (prev, curr) => prev + curr.quantity * curr?.productId?.sellingPrice,
-    //     0
-    //   );
+  //       if (responseData.success) {
+  //         fetchData();
+  //       }
+  //     }
+  //   };
+
+  // const deleteCartProduct = async (id) => {
+  //     const response = await fetch(SummaryApi.deleteCartProduct.url, {
+  //       method: SummaryApi.deleteCartProduct.method,
+  //       credentials: "include",
+  //       headers: {
+  //         "content-type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         _id: id,
+  //       }),
+  //     });
+
+  //     const responseData = await response.json();
+
+  //     if (responseData.success) {
+  //       fetchData();
+  //       context.fetchUserAddToCart();
+  //     }
+  //   };
+
+  // const totalQty = data.reduce(
+  //     (prevValue, currentValue) => prevValue + currentValue.quantity,
+  //     0
+  //   );
+
+  //   const totalPrice = data.reduce(
+  //     (prev, curr) => prev + curr.quantity * curr?.productId?.sellingPrice,
+  //     0
+  //   );
 
   return (
     <div className="text-txtGray w-full">
@@ -100,6 +99,7 @@ const Cart = ({ closeModal }) => {
       </div>
 
       {/* Cart Items */}
+      {/* // todo remove CartItemCard page and put its the content instead */}
       <CartItemCard
         image={"assets/test1.png"}
         price={"335"}

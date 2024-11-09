@@ -6,7 +6,7 @@ const Bundles = () => {
   return (
     <div className="w-full min-h-screen bg-zinc-100">
       <ImageWithText text={"Bundles"} />
-      <div className="px-5 py-2">
+      <div className="px-5 py-2 ">
         <div>
           <p className="font-bold text-txtGray">
             Note:{" "}
