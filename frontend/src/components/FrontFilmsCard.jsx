@@ -8,9 +8,10 @@ const FrontFilmsCard = ({
   thickness,
   size,
   newP,
+  btxt
 }) => {
   return (
-    <div className="px-3 w-full  bg-white border rounded-lg mb-4 ">
+    <div className="px-3 w-full  bg-white border rounded-lg mb-3 ">
       <div className="relative flex w-full justify-between items-center ">
         <div className="w-28 h-32">
           <img
@@ -29,7 +30,7 @@ const FrontFilmsCard = ({
         />
         <div>
           <h1 className="text-[16px] font-bold text-txtGray">{title}</h1>
-          <div className="flex justify-center items-center gap-2 flex-wrap ">
+          <div className="flex justify-center items-center gap-2 flex-wrap  ">
             <div className="flex flex-col">
               <span
                 className={`relative font-bold text-[14px] text-txtGray ${
@@ -56,7 +57,7 @@ const FrontFilmsCard = ({
         </div>
 
         <button className="bg-bgBlue font-bold text-white w-[80px] h-[30px] rounded-lg text-sm">
-          ADD
+          {btxt}
         </button>
       </div>
     </div>

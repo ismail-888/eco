@@ -6,6 +6,7 @@ import Referral from '../pages/Referral'
 import Bundles from '../pages/Bundles'
 import WhyUs from '../pages/WhyUs'
 import AboutUs from '../pages/AboutUs'
+import BundleDetails from '../pages/BundleDetails'
 
 
 const router=createBrowserRouter([
@@ -28,6 +29,10 @@ const router=createBrowserRouter([
             {
                 path:"/bundles",
                 element:<Bundles/>
+            },
+            {
+                path:"/bundleDetails/:id",
+                element:<BundleDetails/>
             },
             {
                 path:"/whyus",

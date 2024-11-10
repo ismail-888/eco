@@ -75,6 +75,7 @@ const Products = () => {
                   pack={"10pcs"}
                   thickness={"0.28mm"}
                   size={"XL"}
+                  btxt={"ADD"}
                 />
                 <FrontFilmsCard
                   image={"assets/machine.png"}
@@ -84,6 +85,7 @@ const Products = () => {
                   thickness={"0.28mm"}
                   size={"XL"}
                   newP={true}
+                  btxt={"ADD"}
                 />
                 <FrontFilmsCard
                   image={"assets/machine.png"}
@@ -94,6 +96,7 @@ const Products = () => {
                   size={"XL"}
                   discount={true}
                   newPrice={20}
+                  btxt={"ADD"}
                 />
                 <FrontFilmsCard
                   image={"assets/machine.png"}
@@ -102,6 +105,7 @@ const Products = () => {
                   pack={"10pcs"}
                   thickness={"0.28mm"}
                   size={"XL"}
+                  btxt={"ADD"}
                 />
               </>
             </SwiperSlide>
