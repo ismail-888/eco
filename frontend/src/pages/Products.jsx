@@ -114,6 +114,7 @@ const Products = () => {
               {[1, 2, 3, 4].map((i) => (
                 <BackSkins
                   key={i}
+                  id={i}
                   image={"assets/machine.png"}
                   price={"5"}
                   title={"Leather-Like Series 1"}

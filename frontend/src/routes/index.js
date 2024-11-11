@@ -7,6 +7,7 @@ import Bundles from '../pages/Bundles'
 import WhyUs from '../pages/WhyUs'
 import AboutUs from '../pages/AboutUs'
 import BundleDetails from '../pages/BundleDetails'
+import DetailsBackSkin from '../pages/DetailsBackSkin'
 
 
 const router=createBrowserRouter([
@@ -21,6 +22,10 @@ const router=createBrowserRouter([
             {
                 path:"/products",
                 element:<Products/>
+            },
+            {
+                path:"/backskinsDetails/:id",
+                element:<DetailsBackSkin/>
             },
             {
                 path:"/referral",
