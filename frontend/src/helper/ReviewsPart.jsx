@@ -25,8 +25,8 @@ const ReviewComponent = () => {
       sx={{
         width: "90%",
         maxWidth: "1200px",
-        flexDirection: { xs: "column", md: "row" },
-        gap: { xs: 2, md: 4 },
+        flexDirection: { xs: "row", md: "row" },
+        gap: { xs: 2.5, md: 4 },
       }}
     >
       {/* Left Section */}
@@ -34,12 +34,13 @@ const ReviewComponent = () => {
         display="flex"
         flexDirection="column"
         alignItems="center"
-        width={{ xs: "100%", md: "30%" }}
+        width={{ xs: "30%", md: "30%" }}
         textAlign="center"
+        // gap={1}
       >
         <Typography
           sx={{
-            fontSize: { xs: "3rem", md: "4rem" },
+            fontSize: { xs: "4rem", md: "4rem" },
             fontWeight: "bold",
             color: "#4c4c4c",
             lineHeight: 1,
@@ -52,7 +53,7 @@ const ReviewComponent = () => {
           value={averageRating}
           precision={0.1}
           readOnly
-          size="large"
+          size="medium"
           sx={{
             color: "#4c4c4c",
             "& .MuiRating-iconFilled": { color: "#4c4c4c" },
@@ -64,15 +65,15 @@ const ReviewComponent = () => {
       {/* Vertical Line */}
       <Box
         sx={{
-          width: "8px",
+          width: "6px",
           bgcolor: "#4c4c4c",
-          height: { xs: "0px", md: "150px" },
+          height: { xs: "170px", md: "150px" },
           alignSelf: { xs: "center", md: "stretch" },
         }}
       ></Box>
 
       {/* Right Section */}
-      <Box width={{ xs: "100%", md: "70%" }}>
+      <Box width={{ xs: "70%", md: "70%" }}>
         {ratingBreakdown.map((rating, index) => (
           <Box
             key={index}
@@ -91,27 +92,27 @@ const ReviewComponent = () => {
             >
               {rating.stars}
             </Typography>
-            <Box width="70%" mr={2}>
+            <Box width="100%" mr={0}>
               <LinearProgress
                 variant="determinate"
                 value={rating.percentage}
                 sx={{
-                  height: 8,
-                  borderRadius: 5,
-                  bgcolor: "#e0e0e0",
+                  height: 7,
+                  borderRadius: 0,
+                  bgcolor: "#f4f5f7",
                   "& .MuiLinearProgress-bar": { bgcolor: "#4c4c4c" },
                 }}
               />
             </Box>
             <Typography
               sx={{
-                width: "20%",
+                width: "0%",
                 // fontWeight: "bold",
                 fontSize: { xs: "0.7rem", md: ".8rem" },
                 color: "#4c4c4c",
               }}
             >
-              {rating.percentage}%
+              %{rating.percentage}
             </Typography>
           </Box>
         ))}

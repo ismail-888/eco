@@ -74,6 +74,7 @@ const CartItemCard = ({ image, title, price, size, pack }) => {
         <div className="h-full w-40">
           <img
             src={"/assets/cart-logo.png"}
+            alt="cart"
             className="w-full h-[200px]  mix-blend-multiply"
           />
         </div>
