@@ -58,6 +58,7 @@ const DetailsBackSkin = () => {
             />
           ))}
         </div>
+        
         <p className="mt-5 font-bold text-red-700 text-lg">OUT OF STOCK</p>
       </div>
 
