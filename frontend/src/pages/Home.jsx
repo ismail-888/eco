@@ -34,7 +34,7 @@ const Home = () => {
     },
   ];
   return (
-    <div className="w-full min-h-screen bg-zinc-500 ">
+    <div className="w-full min-h-screen bg-zinc-100 ">
       <div className="h-[20px] bg-custom-gradient-180   "></div>
       {/* kenet ta7ti md:h[80vh] */}
       <div className="h-[90vh] md:h-full  bg-custom-gradient  ">
