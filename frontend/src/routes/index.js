@@ -9,6 +9,7 @@ import AboutUs from '../pages/AboutUs'
 import BundleDetails from '../pages/BundleDetails'
 import DetailsBackSkin from '../pages/DetailsBackSkin'
 import Reviews from '../pages/Reviews'
+import PlaceOrder from '../pages/PlaceOrder'
 
 
 const router=createBrowserRouter([
@@ -55,6 +56,10 @@ const router=createBrowserRouter([
             {
                 path:"/reviews",
                 element:<Reviews/>
+            },
+            {
+                path:"/place-order",
+                element:<PlaceOrder />
             },
         ]
     }

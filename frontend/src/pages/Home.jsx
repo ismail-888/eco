@@ -5,11 +5,31 @@ import "swiper/css/pagination";
 import Featured from "../components/Featured";
 
 const InvImages = [
-  "/assets/invest/inv1.png",
-  "/assets/invest/inv2.png",
-  "/assets/invest/inv3.png",
-  "/assets/invest/inv4.png",
-  "/assets/invest/inv5.png",
+  {
+    imgURL: "/assets/invest/inv1.png",
+    heading: "1. Profit",
+    description: "Profit is the reward for taking risks in business.",
+  },
+  {
+    imgURL: "/assets/invest/inv2.png",
+    heading: "2. Growth",
+    description: "Growth is essential for staying competitive.",
+  },
+  {
+    imgURL: "/assets/invest/inv3.png",
+    heading: "3. Sustainability",
+    description: "Sustainability ensures long-term success.",
+  },
+  {
+    imgURL: "/assets/invest/inv4.png",
+    heading: "4. Innovation",
+    description: "Innovation drives new opportunities and advancements.",
+  },
+  {
+    imgURL: "/assets/invest/inv5.png",
+    heading: "5. Teamwork",
+    description: "Teamwork is key to achieving business goals efficiently.",
+  },
 ];
 
 const Home = () => {
@@ -95,46 +115,48 @@ const Home = () => {
       </div>
 
       <div className="w-[80%] h-full mx-auto pt-1">
-        <div className="flex flex-col justify-center items-center ">
-          <p className="font-bold text-txtGray text-lg">1.Profit</p>
-          <p>
-            asd asdsk scsj sh nsa dhavi ndav daivna sddn vaid nvidsfn ivnfds in
-            ida idsn isdn fsd id f ibfsn ifn ifds d din
-          </p>
-        </div>
+        <div>
+          {/* Dynamic Heading and Paragraph */}
+          <div className="flex flex-col justify-center items-center">
+            <h1 className="font-bold text-txtGray text-lg">
+              {InvImages[activeImageIndex]?.heading}
+            </h1>
+            <p>{InvImages[activeImageIndex]?.description}</p>
+          </div>
 
-        {/* swip invest */}
-        <div className="flex flex-col items-center my-10">
           {/* Swiper Component */}
-          <Swiper
-            ref={mainSwiperRef} // Ref to the Swiper component
-            initialSlide={activeImageIndex} // Initial slide based on activeImageIndex
-            onSlideChange={(swiper) => setActiveImageIndex(swiper.activeIndex)} // Update activeIndex on slide change
-            pagination={{ clickable: true }} // Pagination with clickable bullets
-            className="my-5 w-[300px] h-[300px] lg:w-96 lg:h-96 md:w-[300px] md:h-[300px] rounded-3xl"
-          >
-            {InvImages.map((imgURL, i) => (
-              <SwiperSlide key={i} className="bg-zinc-50">
-                <img
-                  src={imgURL}
-                  alt={`slide-${i}`}
-                  className="h-full w-full object-scale-down mix-blend-multiply"
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+          <div className="flex flex-col items-center my-10">
+            <Swiper
+              initialSlide={activeImageIndex} // Initial slide based on activeImageIndex
+              onSlideChange={(swiper) =>
+                setActiveImageIndex(swiper.activeIndex)
+              } // Update activeIndex on slide change
+              pagination={{ clickable: true }} // Pagination with clickable bullets
+              className="my-5 w-[300px] h-[300px] lg:w-96 lg:h-96 md:w-[300px] md:h-[300px] rounded-3xl"
+            >
+              {InvImages.map((item, i) => (
+                <SwiperSlide key={i} className="bg-zinc-50">
+                  <img
+                    src={item.imgURL}
+                    alt={`slide-${i}`}
+                    className="h-full w-full object-scale-down mix-blend-multiply"
+                  />
+                </SwiperSlide>
+              ))}
+            </Swiper>
 
-          {/* Custom Progress Indicator */}
-          <div className="flex gap-2">
-            {InvImages.map((_, i) => (
-              <div
-                key={i}
-                className={`h-2 w-8 ${
-                  i === activeImageIndex ? "bg-red-700" : "bg-bgBlue"
-                }`}
-                style={{ transform: "skew(20deg)" }}
-              />
-            ))}
+            {/* Custom Progress Indicator */}
+            <div className="flex gap-2">
+              {InvImages.map((_, i) => (
+                <div
+                  key={i}
+                  className={`h-2 w-8 ${
+                    i === activeImageIndex ? "bg-red-700" : "bg-bgBlue"
+                  }`}
+                  style={{ transform: "skew(20deg)" }}
+                />
+              ))}
+            </div>
           </div>
         </div>
 
@@ -181,7 +203,7 @@ const Home = () => {
               onSlideChange={(swiper) => setActiveImageIndex(swiper.realIndex)} // Update active slide index
               className="my-5"
             >
-              {FeaturedItems.map((item,i) => (
+              {FeaturedItems.map((item, i) => (
                 <SwiperSlide key={i}>
                   <Featured text={item.text} image={item.image} />
                 </SwiperSlide>

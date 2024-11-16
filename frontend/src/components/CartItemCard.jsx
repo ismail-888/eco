@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { MdDelete } from "react-icons/md";
-
+import { useNavigate } from "react-router-dom";
 import { FiPlus, FiMinus } from "react-icons/fi";
-const CartItemCard = ({ image, title, price, size, pack }) => {
+
+const CartItemCard = ({ image, title, price, size, pack, handleCheckout }) => {
   const [quantity, setQuantity] = useState(1);
+  const navigate = useNavigate();
 
   const handleIncrement = () => setQuantity((prev) => prev + 1);
   const handleDecrement = () =>
@@ -95,7 +97,10 @@ const CartItemCard = ({ image, title, price, size, pack }) => {
             <span>Total</span>
             <span>$835</span>
           </div>
-          <button className="bg-bgBlue font-bold text-white px-5 py-2 w-full rounded-lg text-lg mt-4">
+          <button
+            onClick={handleCheckout}
+            className="bg-bgBlue font-bold text-white px-5 py-2 w-full rounded-lg text-lg mt-4"
+          >
             Checkout
           </button>
         </div>

@@ -1,10 +1,16 @@
 // import React, { useState } from "react";
 import CartItemCard from "../components/CartItemCard";
 // import { MdDelete } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const Cart = ({ closeModal }) => {
   // const [data, setData] = useState([3]);
+  const navigate = useNavigate();
 
+  const handleCheckout = () => {
+    closeModal(); // Close the modal first
+    navigate("/place-order"); // Navigate to the PlaceOrder page
+  };
   // const increaseQty = async (id, qty) => {
   //     const response = await fetch(SummaryApi.updateCartProduct.url, {
   //       method: SummaryApi.updateCartProduct.method,
@@ -106,6 +112,7 @@ const Cart = ({ closeModal }) => {
         title={"UV Privacy Glass-Like Film "}
         pack={"5pcs"}
         size={"S"}
+        handleCheckout={handleCheckout}
       />
       {/* <CartItemCard
         image={"assets/printer.png"}
