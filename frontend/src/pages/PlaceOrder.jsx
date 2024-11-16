@@ -22,7 +22,7 @@ const PlaceOrder = () => {
           <option value="Order Summary Hidden">Hide Order Summary</option>
           <option value="Order Summary Shown">Show Order Summary</option>
         </select>
-        <p className="font-bold text-lg">$835</p>
+        <p className="font-bold text-lg text-txtGray">$835</p>
       </div>
 
       {/* Order Summary Content */}

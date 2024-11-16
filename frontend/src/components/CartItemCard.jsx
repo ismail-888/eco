@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { MdDelete } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import { FiPlus, FiMinus } from "react-icons/fi";
 
 const CartItemCard = ({ image, title, price, size, pack, handleCheckout }) => {
   const [quantity, setQuantity] = useState(1);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const handleIncrement = () => setQuantity((prev) => prev + 1);
   const handleDecrement = () =>

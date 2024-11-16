@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -34,7 +34,7 @@ const InvImages = [
 
 const Home = () => {
   const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const mainSwiperRef = useRef(null);
+  // const mainSwiperRef = useRef(null);
   const FeaturedItems = [
     {
       text: "UV Privacy Glass-Like Film",
