@@ -64,6 +64,7 @@ const DetailsMachines = () => {
         className="bg-white w-[50%] md:w-[96%] h-[300px] mx-auto my-3 rounded-2xl overflow-hidden"
       >
         <iframe
+        title="vide"
           src={`https://www.youtube.com/embed/0oaCkVIZHl8${
             isPlaying ? "?autoplay=1" : ""
           }`}
@@ -90,12 +91,12 @@ const DetailsMachines = () => {
   );
 };
 
-{
-  /* <video
-          src="/assets/bleeding.mp4"
-          controls
-          type="video/mp4"
-          className="w-full h-full object-cover rounded-2xl"
-        /> */
-}
+// {
+//   /* <video
+//           src="/assets/bleeding.mp4"
+//           controls
+//           type="video/mp4"
+//           className="w-full h-full object-cover rounded-2xl"
+//         /> */
+// }
 export default DetailsMachines;
