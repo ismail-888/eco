@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const Machines = ({ image, price, title, subtitle }) => {
+const Machines = ({ image, price, title, subtitle,id }) => {
+  const navigate=useNavigate()
   return (
     <div className="px-3 w-full  bg-white border rounded-lg mb-4 ">
       <div className="relative flex w-full justify-between items-center ">
@@ -18,7 +20,9 @@ const Machines = ({ image, price, title, subtitle }) => {
           <span className=" text-[14px] text-txtGray font-bold">${price}</span>
         </div>
 
-        <button className="bg-bgBlue font-bold text-white w-[80px] h-[30px] rounded-lg text-sm">
+        <button
+        onClick={() => navigate(`/detailsmachine/${id}`)}
+         className="bg-bgBlue font-bold text-white w-[80px] h-[30px] rounded-lg text-sm">
           Buy Now
         </button>
       </div>

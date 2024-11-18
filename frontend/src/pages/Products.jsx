@@ -129,6 +129,7 @@ const Products = () => {
               {[1, 2, 3, 4].map((i) => (
                 <Machines
                   key={i}
+                  id={i}
                   image={"assets/machine.png"}
                   price={"350"}
                   title={"Smart Plotter ZC1-Max"}

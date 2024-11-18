@@ -10,6 +10,8 @@ import BundleDetails from '../pages/BundleDetails'
 import DetailsBackSkin from '../pages/DetailsBackSkin'
 import Reviews from '../pages/Reviews'
 import PlaceOrder from '../pages/PlaceOrder'
+import DetailsMachines from '../pages/DetailsMachines'
+import Video from '../pages/Video'
 
 
 const router=createBrowserRouter([
@@ -26,8 +28,16 @@ const router=createBrowserRouter([
                 element:<Products/>
             },
             {
+                path:"/videos",
+                element:<Video/>
+            },
+            {
                 path:"/backskinsDetails/:id",
                 element:<DetailsBackSkin/>
+            },
+            {
+                path:"/detailsmachine/:id",
+                element:<DetailsMachines/>
             },
             {
                 path:"/referral",
