@@ -93,7 +93,7 @@ const DetailsMachines = () => {
         <div className="w-[50%] flex justify-center items-center mx-auto md:w-full h-full  ">
           <img
             src="/assets/machineDetails/machine1.jpg"
-            alt="Main Image"
+            alt="Main "
             className="rounded-3xl w-full h-full object-cover"
           />
         </div>
@@ -104,7 +104,7 @@ const DetailsMachines = () => {
             <div className="md:h-[200px] w-full h-[400px]">
               <img
                 src="/assets/machineDetails/machine2.jpg"
-                alt="Small Image 1"
+                alt="Small  1"
                 className="rounded-3xl  w-full h-full object-fill"
               />
             </div>
@@ -113,7 +113,7 @@ const DetailsMachines = () => {
             <div className="md:h-[200px] w-full h-[400px] ">
               <img
                 src="/assets/machineDetails/machine3.jpg"
-                alt="Small Image 2"
+                alt="Small  2"
                 className="rounded-3xl w-full h-full object-fill"
               />
             </div>
@@ -126,7 +126,7 @@ const DetailsMachines = () => {
         <div className="w-[50%] flex justify-center items-center mx-auto md:w-full h-full  ">
           <img
             src="/assets/machineDetails/machine4.jpg"
-            alt="Main Image"
+            alt="Main "
             className="rounded-3xl w-full h-full object-cover"
           />
         </div>
@@ -137,7 +137,7 @@ const DetailsMachines = () => {
             <div className="md:h-[200px] w-full h-[400px]">
               <img
                 src="/assets/machineDetails/machine2.jpg"
-                alt="Small Image 1"
+                alt="Small 1"
                 className="rounded-3xl  w-full h-full object-fill"
               />
             </div>
@@ -146,7 +146,7 @@ const DetailsMachines = () => {
             <div className="md:h-[200px] w-full h-[400px] ">
               <img
                 src="/assets/machineDetails/machine3.jpg"
-                alt="Small Image 2"
+                alt="Small 2"
                 className="rounded-3xl w-full h-full object-fill"
               />
             </div>
@@ -159,7 +159,7 @@ const DetailsMachines = () => {
         <div className="w-[50%] flex justify-center items-center mx-auto md:w-full h-full  ">
           <img
             src="/assets/machineDetails/machine5.jpg"
-            alt="Main Image"
+            alt="Main "
             className="rounded-3xl w-full h-full object-cover"
           />
         </div>
