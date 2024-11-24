@@ -32,7 +32,7 @@ const DetailsMachines = () => {
         ADD TO CART
       </button>
 
-      <div className="flex flex-col  justify-center items-start px-10 gap-10 my-10">
+      <div className="flex flex-col  justify-center items-start mx-auto px-10 gap-10 my-10">
         {/* Benefits */}
         <div className="">
           <h1 className="font-bold text-xl text-zinc-800">Benefits:</h1>
@@ -82,10 +82,87 @@ const DetailsMachines = () => {
         </p>
         <button
           onClick={handlePlayVideo}
-          className="bg-bgBlue text-white w-[500px] md:w-full  p-2 flex justify-center items-center mx-auto rounded-md font-bold mt-3"
+          className="bg-bgBlue text-white w-[500px] text-lg font-semibold md:w-full  p-1 flex justify-center items-center mx-auto rounded-md  mt-3"
         >
           WATCH NOW
         </button>
+      </div>
+
+      <div className="p-5 w-full  h-full  ">
+        {/* Big Image */}
+        <div className="w-[50%] flex justify-center items-center mx-auto md:w-full h-full  ">
+          <img
+            src="/assets/machineDetails/machine1.jpg"
+            alt="Main Image"
+            className="rounded-3xl w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Two Small Images */}
+        <div className="flex  items-center justify-center gap-5 mt-5">
+          <div className="md:w-1/2 ">
+            <div className="md:h-[200px] w-full h-[400px]">
+              <img
+                src="/assets/machineDetails/machine2.jpg"
+                alt="Small Image 1"
+                className="rounded-3xl  w-full h-full object-fill"
+              />
+            </div>
+          </div>
+          <div className="md:w-1/2 ">
+            <div className="md:h-[200px] w-full h-[400px] ">
+              <img
+                src="/assets/machineDetails/machine3.jpg"
+                alt="Small Image 2"
+                className="rounded-3xl w-full h-full object-fill"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-5 w-full  h-full  ">
+        {/* Big Image */}
+        <div className="w-[50%] flex justify-center items-center mx-auto md:w-full h-full  ">
+          <img
+            src="/assets/machineDetails/machine4.jpg"
+            alt="Main Image"
+            className="rounded-3xl w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Two Small Images */}
+        <div className="flex  items-center justify-center gap-5 mt-5">
+          <div className="md:w-1/2 ">
+            <div className="md:h-[200px] w-full h-[400px]">
+              <img
+                src="/assets/machineDetails/machine2.jpg"
+                alt="Small Image 1"
+                className="rounded-3xl  w-full h-full object-fill"
+              />
+            </div>
+          </div>
+          <div className="md:w-1/2 ">
+            <div className="md:h-[200px] w-full h-[400px] ">
+              <img
+                src="/assets/machineDetails/machine3.jpg"
+                alt="Small Image 2"
+                className="rounded-3xl w-full h-full object-fill"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="p-5 w-full  h-full  ">
+        {/* Big Image */}
+        <div className="w-[50%] flex justify-center items-center mx-auto md:w-full h-full  ">
+          <img
+            src="/assets/machineDetails/machine5.jpg"
+            alt="Main Image"
+            className="rounded-3xl w-full h-full object-cover"
+          />
+        </div>
       </div>
     </div>
   );
