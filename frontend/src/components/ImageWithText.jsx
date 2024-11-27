@@ -4,7 +4,7 @@ const ImageWithText = ({ text }) => {
   return (
     <div className="relative w-full h-[500px] xs:h-72 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px]">
       {/* Background image */}
-      <div className="w-full h-full">
+      <div className="w-[500wh] h-full">
         <img
           src={"/assets/photoHeader.jpg"}
           alt="background"

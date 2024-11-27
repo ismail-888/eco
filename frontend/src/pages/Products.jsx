@@ -23,11 +23,11 @@ const Products = () => {
   };
 
   return (
-    <div>
+    <div className="min-h-screen bg-zinc-100">
       <ImageWithText text={"Products"} />
-      <div className="w-full min-h-screen bg-zinc-100 ">
-        <div className="px-5 py-2">
-          <div className="flex justify-between items-center p-4 font-bold text-txtGray text-lg">
+      <div className="md:w-full w-[80%] mx-auto   ">
+        <div className="px-3 py-2">
+          <div className="flex md:justify-between justify-around items-center p-4 font-bold text-txtGray text-lg">
             <button
               className={
                 activeComponent === "FrontFilmsCard"

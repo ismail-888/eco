@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 function App() {
   const location = useLocation();
-  const noFooterPaths = ['/products','/bundles','/place-order'];
+  const noFooterPaths = ['/products','/bundles','/place-order','/videos'];
   const noHeaderPaths=[]
   //120px
   return (

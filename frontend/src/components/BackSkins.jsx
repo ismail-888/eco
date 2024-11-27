@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-const BackSkins = ({ image, title, price, pack, size, designs,id }) => {
-  const navigate=useNavigate()
+const BackSkins = ({ image, title, price, pack, size, designs, id }) => {
+  const navigate = useNavigate();
   return (
-    <div className="px-3 w-full  bg-white border rounded-lg mb-4 ">
-      <div className="relative flex w-full justify-between items-center ">
-      <div className="w-28 h-32">
+    <div className="px-3 md:w-full w-[80%] mx-auto  bg-white border rounded-lg mb-4 ">
+      <div className="relative flex w-full md:justify-between justify-around items-center ">
+        <div className="w-28 h-32">
           <img
             src={image}
             alt="BackSkins"
@@ -36,8 +36,9 @@ const BackSkins = ({ image, title, price, pack, size, designs,id }) => {
         </div>
 
         <button
-        onClick={() => navigate(`/backskinsDetails/${id}`)}
-         className="bg-bgBlue font-bold text-white w-[80px] h-[30px] rounded-lg text-sm ">
+          onClick={() => navigate(`/backskinsDetails/${id}`)}
+          className="bg-bgBlue font-bold text-white w-[80px] h-[30px] rounded-lg text-sm "
+        >
           VIEW
         </button>
       </div>

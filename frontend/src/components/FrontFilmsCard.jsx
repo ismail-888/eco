@@ -11,7 +11,7 @@ const FrontFilmsCard = ({
   btxt
 }) => {
   return (
-    <div className="px-3 w-full  bg-white border rounded-lg mb-3 ">
+    <div className="px-3 md:w-full w-[80%] mx-auto  bg-white border rounded-lg mb-3 ">
       <div className="relative flex w-full justify-between items-center ">
         <div className="w-28 h-32">
           <img
