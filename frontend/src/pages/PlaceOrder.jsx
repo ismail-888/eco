@@ -12,7 +12,8 @@ const PlaceOrder = () => {
   };
 
   return (
-    <div className="p-5 bg-zinc-100 min-h-screen">
+    <div className="bg-zinc-100 min-h-screen">
+    <div className="p-5 w-[70%] mx-auto md:w-full ">
       {/* Header Section */}
       <div className="flex justify-between items-center bg-zinc-200 px-4 py-3 rounded shadow-md">
         <select
@@ -107,6 +108,8 @@ const PlaceOrder = () => {
           Place Order
         </button>
       </form>
+    </div>
+
     </div>
   );
 };

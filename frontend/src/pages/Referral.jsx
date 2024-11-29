@@ -4,12 +4,12 @@ import VideoCard from "../components/VideoCard";
 
 const Referral = () => {
   return (
-    <div>
+    <div className="min-h-screen bg-zinc-100">
       <ImageWithText text={"Referral Program"} />
-      <div className="w-full min-h-screen bg-zinc-100 ">
+      <div className="w-full ">
         <div className="px-5  py-20  ">
           <VideoCard image={"/assets/test1.png"} text={"Rockspace machines in one place"}/>
-          <div className="bg-white rounded-2xl mt-10 px-2 py-3 flex flex-col gap-2 font-medium">
+          <div className="w-[50%] mx-auto md:w-full bg-white rounded-2xl mt-10 px-2 py-3 flex flex-col gap-2 font-medium">
             <span>
               We’re excited to introduce our new Referral Program, designed to
               help you recover the cost of your cutting machine! Here’s how it

@@ -2,7 +2,7 @@ import React from "react";
 
 const VideoCard = ({ image, text, vButton }) => {
   return (
-    <div className="flex justify-evenly items-center gap-4 px-2 bg-white rounded-2xl mb-2">
+    <div className="w-[50%] mx-auto md:w-full flex justify-evenly items-center gap-4 px-2 bg-white rounded-2xl mb-2">
       <div className="relative  h-[350px]">
         <img
           src={image}

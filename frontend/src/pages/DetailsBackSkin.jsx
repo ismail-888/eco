@@ -63,7 +63,7 @@ const DetailsBackSkin = () => {
       </div>
 
       {/* Thumbnail Swipeable Slider */}
-      <div className="mt-1 w-full sm:w-[100%] md:w-[70%] lg:w-[50%] xl:w-[50%] mx-auto">
+      <div className="mt-1 w-[50%] sm:w-[100%] md:w-[70%] lg:w-[50%] xl:w-[50%] mx-auto">
         <h2 className="font-bold text-txtGray text-xl p-3 mx-3">Select Design:</h2>
         <Swiper
           spaceBetween={10}
@@ -72,9 +72,10 @@ const DetailsBackSkin = () => {
         >
           {imageArray.map((imgURL, i) => (
             <SwiperSlide key={i} onClick={() => handleThumbnailClick(i)}>
+              {/* ring-1 ring-blue-300 */}
               <div
-                className={`h-[150px] w-[100px] bg-white rounded p-1 mx-3 
-                    ${activeImageIndex === i ? "ring-1 ring-blue-300" : ""}
+                className={`h-[150px] w-[100px] lg:w-[100px] xl:w-[120px] xs:w-[90px] bg-white rounded p-1 mx-3 
+                     ${activeImageIndex === i ? "" : ""} 
                 `}
               >
                 <img
@@ -88,7 +89,7 @@ const DetailsBackSkin = () => {
         </Swiper>
 
         <div className="flex flex-col">
-          <div className="flex justify-between p-3 mx-3">
+          <div className="flex md:justify-between justify-evenly p-3 mx-3">
             <div className="flex items-center gap-5 font-thin text-lg">
               <p>Pack: 5pcs</p>
               <p>Designs: 4</p>
@@ -96,7 +97,7 @@ const DetailsBackSkin = () => {
             </div>
             <p className="font-bold text-xl mr-2">$5</p>
           </div>
-          <button className="bg-bgBlue font-bold text-white w-full mx-auto p-3 rounded-xl md:w-[380px] xs:w-[200px] xs:mb-3 ">
+          <button className="bg-bgBlue font-bold text-white w-[400px] mx-auto p-3 rounded-xl  md:w-[380px] xs:w-[200px] xs:mb-3 ">
             ADD TO CART
           </button>
         </div>

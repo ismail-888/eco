@@ -12,7 +12,7 @@ const CartItemCard = ({ image, title, price, size, pack, handleCheckout }) => {
     setQuantity((prev) => (prev > 1 ? prev - 1 : 1));
 
   return (
-    <div>
+    <div className="w-[50%] lg:w-[70%] md:w-full mx-auto">
       <div className="relative flex justify-center   w-full bg-white  p-2 mb-4   rounded-xl ">
         <div className=" flex w-full  items-center">
           {/* Product Image */}

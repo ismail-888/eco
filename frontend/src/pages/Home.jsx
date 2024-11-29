@@ -55,7 +55,7 @@ const Home = () => {
   ];
   return (
     <div className="w-full min-h-screen bg-zinc-100 ">
-      <div className="h-[20px] bg-custom-gradient-180   "></div>
+      <div className="h-[10px] bg-custom-gradient-180   "></div>
       {/* kenet ta7ti md:h[80vh] */}
       <div className="h-[90vh] md:h-full  bg-custom-gradient  ">
         {/* --------------------------------- */}
@@ -76,16 +76,32 @@ const Home = () => {
         {/* </div> */}
         {/* </div> */}
         {/* </div>  */}
+        {/* <div className=" border border-red-500 w-[90%] h-[200px] mx-auto -mb-40 overflow-hidden">
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+            <p>SCREEN</p>
+        </div> */}
         {/* ---------------------------------------- */}
 
         {/* image and button section */}
-        <div className="flex flex-col justify-center items-center w-[90%] mx-auto gap-20 sm:gap-0">
+        <div className="flex flex-col justify-center items-center w-[90%] h-full mx-auto gap-20 sm:gap-0 overflow-hidden">
+          <div className="w-[90%] h-full border border-red-100 -mt-40">
           <img
             src={"/assets/machine.png"}
-            className="h-[430px] w-full object-cover -mt-10"
+            className="h-full w-full object-cover "
             alt="machine"
           />
-          <div className="flex w-full justify-around items-center -mt-14 mb-40 ">
+          </div>
+          <div className="flex w-full justify-around items-center -mt-[10rem] mb-40 ">
             <button
               className="bg-red-800 font-semibold text-white h-[30px] w-[150px] flex items-center justify-center"
               style={{ transform: "skew(20deg)" }}
