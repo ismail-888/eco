@@ -14,7 +14,7 @@ const ImageWithText = ({ text }) => {
 
       {/* Centered text */}
       <div className="absolute inset-0 flex items-center justify-center  bg-opacity-40 ">
-        <span className="text-white text-[100px] xs:text-5xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-opacity-70 mt-5 text-center text-wrap">
+        <span className="text-white text-[100px]  sm:text-6xl md:text-6xl lg:text-7xl font-bold text-opacity-70 mt-5 text-center text-wrap">
           {text}
         </span>
       </div>
